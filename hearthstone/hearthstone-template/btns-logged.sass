@@ -1,0 +1,16 @@
+@import config
+
+.btns-logged
+    display: grid
+    grid-template-columns: 15% auto 15%
+
+    & > *
+        text-align: center
+
+    &__wishlist
+        grid-area: 1 / 1 / 1 / 1
+        @extend %generic-border
+
+    &__deck
+        grid-area: 1 / 3 / 1 / 3
+        @extend %generic-border

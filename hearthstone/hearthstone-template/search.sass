@@ -1,0 +1,149 @@
+@import config
+
+.search
+    background: url('background.jpg') center
+    background-repeat: repeat-y
+    width: 100%
+    justify-content: center
+    background-size: cover
+    width: 100vw
+    @extend %general-font
+
+    h2
+        padding-top: 3%
+        font-size: 2em
+        text-align: center
+
+    .submit-container
+        width: 90%
+        margin: 2% 5%
+        display: flex
+        flex-direction: column
+
+        .submit-button
+            @extend %general-buttons
+            width: 50%
+            margin: 3% auto
+
+    .filter-container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+
+        & > *
+            width: 70%
+            margin: 3% auto
+
+    .rarity-names
+        display: flex
+        justify-content: space-around
+
+    .rarity-container
+        width: 90%
+        margin: auto 5%
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        text-align: center
+
+        input
+            display: flex
+            justify-content: center
+            align-items: center
+
+        p
+            text-align: center
+
+    .language-container
+        width: 95%
+        margin: auto 2.5%
+        display: flex
+        flex-direction: column
+
+        .language-button
+            @extend %general-buttons
+            width: 80%
+            margin: 3% 10%
+        .language-names
+            margin: 3% auto 0% auto
+            width: 100%
+            display: flex
+            justify-content: space-between
+
+        .language-filter
+            margin-bottom: 5%
+            width: 100%
+            display: flex
+            justify-content: space-around
+
+    .byclass-container
+        width: 60%
+        margin: auto 20%
+
+button
+    transition: opacity .2s
+    &:hover
+        opacity: 0.5
+    &:active
+        background-image: linear-gradient(#5f514b, #ac8e74)
+        transform: translate(0.1em, 0.1em)
+
+
+@media screen and (min-width: 768px)
+    .search
+        
+        .submit-container
+            width: 40%
+            margin: auto 30%
+
+        .filter-container
+            width: 60%
+            margin: auto 20%
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-template-rows: repeat(2, 1fr)
+            text-align: center
+
+        .rarity-names
+            width: 50%
+            margin: auto 25%
+            display: flex
+            justify-content: space-between
+            text-align: center
+
+        .rarity-container
+            width: 40%
+            margin: auto 25%
+            display: flex
+            justify-content: space-between
+            text-align: center
+
+        .language-container
+            width: 40%
+            margin: 3% 30%
+
+
+
+
+
+
+    
+//     & > *
+//         margin: 1.5% auto
+
+//     h2
+
+//     .browser
+//         width: 60%
+// .accordion, .mana-cost
+//     cursor: pointer
+// .container-filters
+//     & > *
+//         margin: 1.5%
+//         display: none
+//         background-color: white
+//         overflow: hidden
+
+
+
+

@@ -1,0 +1,90 @@
+@import config
+    
+
+.details
+    @extend %general-font
+    @extend %generic-bg
+    display: flex
+    flex-direction: column   
+    height: 65vh  
+           
+    &__nameuser
+        text-align: center
+        margin-top: 5%
+    &__container
+        display: flex
+        justify-content: center
+        width: 80%
+        margin: 0 auto  
+        height: 20%
+
+    &__image
+        width: auto
+        margin: 0 auto
+        max-height: 277px
+
+    &__container-rating
+        text-align: center
+        margin-bottom: 20px
+        height: 10%
+        font-size: 2em
+
+    &__adds
+        display: flex
+        flex-direction: column
+        width: 70%
+        margin: 0 auto
+        height: 5%
+
+    &__btn-wishlist
+        @extend %general-buttons
+        @extend %general-font
+        margin-bottom: 20px
+        height: fit-content
+        font-size: 1.5em
+        &.checked-details
+            background-image: linear-gradient(#463b37, #8d745f)
+    
+    &__btn-deck
+        @extend %general-buttons
+        @extend %general-font
+        margin-bottom: 20px
+        height: fit-content
+        font-size: 1.5em
+
+    &__arrow
+        text-decoration: none
+        font-size: 1.3rem
+        color:#7a3613
+        margin: 5px 0 0 20px
+
+.card-info
+    font-size: 1.3rem
+    margin: 20px auto    
+    list-style: none
+
+button
+    transition: opacity .2s
+    &:hover
+        opacity: 0.5
+    &:active
+        background-image: linear-gradient(#5f514b, #ac8e74)
+        transform: translate(0.1em, 0.1em)
+
+
+    
+
+@media screen and (min-width: 768px)
+    .details    
+        &__image
+            width: auto
+            margin: 0 auto
+            max-height: 383px
+
+        &__adds
+            display: flex
+            flex-direction: column
+            width: 30%
+            margin: 0 auto
+            height: 5%
+            

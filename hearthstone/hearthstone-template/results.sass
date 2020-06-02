@@ -1,0 +1,82 @@
+@import config
+.results-container
+    background-color: grey
+    box-shadow: inset 0 0 2.25em 0.5em black
+.results
+    padding: 3% auto
+    display: flex
+    width: 100%
+    
+    
+    flex-wrap: wrap
+    list-style: none
+    text-align: center
+    align-items: center
+    align-content: center
+
+    &__card
+        display: grid
+        grid-template-rows: auto 1fr repeat(3, auto)
+        width: 95%
+        margin: 3% 2.5%
+        justify-content: center
+        background-color: rgba(0, 0, 0, 0.3)
+        border-radius: 1em
+        border: 1px solid yellow
+        box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.6)
+
+        h2
+            margin-top: 3%
+            @extend %general-font
+            font-size: 2.5em
+
+        img
+            width: 90%
+            margin: auto 5%
+            transition: transform .2s
+            &:hover
+                transform: scale(1.1)
+                
+        button
+            @extend %general-buttons
+            transition: opacity .2s
+            width: 85%
+            margin: 4.45% 7.5%
+            @extend %general-font
+            font-size: 1.2em
+            &:hover
+                opacity: 0.5
+            &:active
+                background-image: linear-gradient(#5f514b, #ac8e74)
+                transform: translate(0.1em, 0.1em)
+
+            &.checked-wl
+                background-image: linear-gradient(#463b37, #8d745f)
+
+        .rating-stars
+            text-shadow: 0 0 0.2em white
+            font-weight: bolder
+            font-size: 1.6em
+
+.fas
+    font-size: 1.5em
+
+    &.checked
+        color: orange
+
+button
+    transition: opacity .2s
+    &:hover
+        opacity: 0.5
+    &:active
+        background-image: linear-gradient(#5f514b, #ac8e74)
+        transform: translate(0.1em, 0.1em)
+
+@media screen and (min-width: 768px)
+    .results
+        width: 95%
+        margin: auto 2.5%
+        justify-content: space-around
+        &__card
+            width: 21%
+            margin: 0.5%

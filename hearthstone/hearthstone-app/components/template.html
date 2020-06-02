@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hearthstone DB</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body style background="#ebd19e">
+    <main class="main-background">
+        <div class = 'btns-logged'>
+            <button class='btns-logged__wishlist'>WishList</button>
+            <button class='btns-logged__deck'>Deck</button>
+        </div>
+
+        <div class ="container-login">
+        <h1>HEARTHSTONE DATABASE</h1>
+        <form class="login">
+            
+            <h2>Login</h2>
+            <input type="text" name="username" placeholder="Username"></input><br><br>
+            <input type="text" name="password" placeholder="Password"></input><br><br>
+            <button>Login</button><br><br>
+            <a href= "">Register</a>
+        </form>
+        </div>
+
+        <div class ='container-register'>
+
+            <form class="register">
+                <h2>REGISTER</h2>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="surname" placeholder="Surname">
+                <input type="text" name="username" placeholder="Username">
+                <input type="password" name="password" placeholder="Password">
+                <form>
+                    Age:
+                    <input type="number" name="age" min="1" max="130">
+                </form>
+    
+                <form>
+                    <input type="radio" name="gender" value="male" checked>Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="non-binary">Non-binary
+                    <input type="submit" value="Register">
+                    <a href="">Go to Login</a>
+                </form>
+    
+            </form>
+        </div>
+        
+        <form style="background-color: violet;">
+            <h2>Search</h2>
+            <input type="text" name="browser" placeholder="Type here to search of a card">
+            <button class="filter">By Class</button>
+            <form class = 'by-class'>
+                <input type="radio" name = "Druid" value ="Druid" >Druid
+                <input type="radio" name = "Hunter" value ="Hunter">Hunter
+                <input type="radio" name = "Mage" value ="Mage">Mage
+                <input type="radio" name = "Paladin" value ="Paladin">Paladin
+                <input type="radio" name = "Priest" value ="Priest">Priest
+                <input type="radio" name = "Rogue" value ="Rogue">Rogue
+                <input type="radio" name = "Shaman" value ="Shaman">Shaman
+                <input type="radio" name = "Warlock" value ="Warlock">Warlock
+                <input type="radio" name = "Warrior" value ="Warrior">Warrior
+                <input type="radio" name = "Dream" value ="Dream">Dream
+            </form>
+
+            <button class="accordion">By Race</button>
+            <form class = 'by-race'>
+                <input type="radio" name = "Demon" value ="Demon" >Demon
+                <input type="radio" name = "Dragon" value ="Dragon">Dragon
+                <input type="radio" name = "Mech" value ="Mech">Mech
+                <input type="radio" name = "Murloc" value ="Murloc">Murloc
+                <input type="radio" name = "Beast" value ="Beast">Beast
+                <input type="radio" name = "Pirate" value ="Pirate">Pirate
+                <input type="radio" name = "Totem" value ="Totem">Totem
+            </form>
+
+            <button class="filter">By Faction</button>
+            <div class="by-faction">
+                <input type="checkbox" name="horde" value="Horde">Horde
+                <input type="checkbox" name="alliance" value="Alliance">Alliance
+                <input type="checkbox" name="neutral" value="Neutral">Neutral
+            </div>
+
+            <button class="accordion">By Quality</button>
+            <form class="by-quality">
+                <h2>SEARCH CARDS BY QUALITY</h2>
+                <input type="radio" name="basic" value="Basic">Free
+                <input type="radio" name="common" value="Common">Common
+                <input type="radio" name="rare" value="Rare">Rare
+                <input type="radio" name="epic" value="Epic">Epic
+                <input type="radio" name="legendary" value="Legendary">Legendary
+            </form>
+
+            <button class="accordion">By Type</button>
+            <form class="by-type">
+                <h2>SEARCH CARDS BY TYPE</h2>
+                <input type="checkbox" name="hero" value="Hero">Hero
+                <input type="checkbox" name="minion" value="Minion">Minion
+                <input type="checkbox" name="spell" value="Spell">Spell
+                <input type="checkbox" name="enchantment" value="Enchantment">Enchantment
+                <input type="checkbox" name="weapon" value="Weapon">Weapon
+                <input type="checkbox" name="hero power" value="Hero Power">Hero Power
+            </form>
+        </form>
+
+        
+        <ul class = 'results'>
+            <li class=" = results__card">
+                <img src="https://legaldbol.com/wp-content/uploads/2019/03/48-Free-Printable-Card-Template-Hearthstone-in-Photoshop-by-Card-Template-Hearthstone.jpg">
+                <span>10/10 (500)</span>
+                <button>Add to wishlist</button>
+                <button>Add to deck</button>
+            </li>
+            <li  class=" = results__card">
+                <img src="https://legaldbol.com/wp-content/uploads/2019/03/48-Free-Printable-Card-Template-Hearthstone-in-Photoshop-by-Card-Template-Hearthstone.jpg">
+                <span>10/10 (500)</span>
+                <button>Add to wishlist</button>
+                <button>Add to deck</button>
+            </li>
+            <li  class=" = results__card">
+                <img src="https://legaldbol.com/wp-content/uploads/2019/03/48-Free-Printable-Card-Template-Hearthstone-in-Photoshop-by-Card-Template-Hearthstone.jpg">
+                <span>10/10 (500)</span>
+                <button>Add to wishlist</button>
+                <button>Add to deck</button>
+            </li>
+            <li  class=" = results__card">
+                <img src="https://legaldbol.com/wp-content/uploads/2019/03/48-Free-Printable-Card-Template-Hearthstone-in-Photoshop-by-Card-Template-Hearthstone.jpg">
+                <span>10/10 (500)</span>
+                <button>Add to wishlist</button>
+                <button>Add to deck</button>
+            </li>
+        </ul>
+
+                
+        <div class = 'details' style="background-color: rgb(239, 245, 226);">
+            <img src="https://legaldbol.com/wp-content/uploads/2019/03/48-Free-Printable-Card-Template-Hearthstone-in-Photoshop-by-Card-Template-Hearthstone.jpg"> 
+            <ul class = 'card-info'>
+               <li>name:Ysera(EX1_572)</li>
+               <li>CardSet</li>
+               <li>Type</li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li>Race</li> 
+            </ul>
+            <span>Score: 7/10 (50)</span>
+            <button>Add to wishlist</button>
+            <button>Add to deck</button>
+        </div>
+    </main>
+    <footer>
+        <span style = 'background-color: rgb(4, 12, 12); color: white;'>made by Kike, Alex, and me</span>
+    </footer>
+</body>
+<script src="space-background.js"></script>
+</html> 

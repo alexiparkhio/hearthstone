@@ -1,0 +1,71 @@
+@config
+
+.container-login
+    display: flex
+    width: 100%
+    justify-content: center
+    background: url('treeLogin.jpg') center no-repeat
+    height: 100vh
+    background-size: cover
+
+.login
+    
+    display: flex
+    flex-direction: column
+    max-width: 16rem
+    color: white
+    text-align: center
+    height: 10vh
+
+.logo
+    width: auto
+    height: 5.5em      
+    
+       
+        
+input 
+    padding: 0.7rem
+    border-radius: 1.5rem
+    background-color: rgba(0, 0, 0, 0.11)    
+    font-size: 1.2rem
+    text-align-last: center
+    margin-top: 20px
+    box-shadow: 3px 10px #88888847
+    border-top-color: #ffffff00
+
+::placeholder
+    color: black    
+
+    button
+        margin-left: 31%
+        width: 40%
+        border-radius: 2%
+
+.login-button
+    border-bottom-color: #fbf7f7
+    border-top-color: #fffafa00
+    cursor: pointer
+    background-color: #3faee09e
+    padding: 0.7rem
+    border-radius: 1.5rem
+    font-size: 1.2rem
+
+.login-button:hover
+    background-color: #64c7ccd1  
+
+a 
+    padding-bottom: 5%
+    text-decoration: none
+    font-size: 1.6rem
+    color: black
+    font-weight: bolder
+    text-shadow: 0 0 0.25em white
+
+.login > *
+    margin-top: 2rem    
+
+@media screen and (min-width: 768px)
+    .container-login
+        background: url('treeLogin.jpg') center no-repeat, url('background.jpg')
+        box-shadow: inset 0 0 5em 2.5em black
+        
